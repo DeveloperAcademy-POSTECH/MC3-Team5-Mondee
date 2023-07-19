@@ -18,7 +18,9 @@ struct RetryFailView: View {
         VStack{
             Image("ImgFail-WatchOS")
                 .resizable()
-                .frame(width: 76,height: 75)
+                .scaledToFit()
+                .frame(width: 75,height: 75)
+                
             Text("더 씻겨주세요")
                 .font(.body)
                 .fontWeight(.medium)
@@ -32,9 +34,9 @@ struct RetryFailView: View {
             Button("오늘은 그만"){
                 isFinalFail = true
             }
+            .buttonStyle(.borderedProminent)
             
         }
-        .padding(.top,20)
     }
 }
 

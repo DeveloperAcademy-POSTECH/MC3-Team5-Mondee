@@ -1,4 +1,4 @@
-//
+    //
 //  MondeeImageView.swift
 //  Mondee Watch App
 //
@@ -24,7 +24,9 @@ struct MondeeImageView: View {
         
         return image
             .resizable()
-            .frame(width: 120, height: 120)
-            .padding(.top, CGFloat(40))
+            .scaledToFit()
+            .frame(maxWidth: .infinity)
+            .padding(CGFloat(25))
+            .padding(.top,50)
     }
 }
