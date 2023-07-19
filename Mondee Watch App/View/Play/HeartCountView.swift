@@ -18,6 +18,7 @@ struct HeartCountView: View {
                         .font(.title3)
                         .bubbleFontModifier()
                         .opacity(i < gameState.heartCount ? 1 : 0.3)
+                        .animation(.easeIn, value: gameState.heartCount)
                 }
                 Spacer()
             }
