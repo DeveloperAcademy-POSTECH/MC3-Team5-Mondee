@@ -23,6 +23,13 @@ struct Level {
     let nextLevelMessage: String
 }
 
+struct LevelInfo : Identifiable {
+    let id = UUID()
+    let mondeeImg: String
+    let mondeeTitle: String
+    let mondeeContents: String
+}
+
 let cleanMondeeLines = [
     "🤤 후 물맛 좋네",
     "😋 77ㅓ억~",

@@ -10,6 +10,8 @@ import SwiftUI
 struct MondeeLevelView: View {
     @ObservedObject var viewModel: TodayViewModel
     
+    @Binding var isLevelInfoPopup: Bool
+    
     var body: some View {
         VStack(alignment:.leading, spacing: 0) {
             Text("\(viewModel.currentLevel.name)")
@@ -39,5 +41,8 @@ struct MondeeLevelView: View {
         .padding(.all, 20)
         .background(Color.mondeeBoxBackground)
         .cornerRadius(20)
+        .onTapGesture {
+            isLevelInfoPopup = true
+        }
     }
 }

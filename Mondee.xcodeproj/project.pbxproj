@@ -69,6 +69,8 @@
 		7FB8E58F2A6F623A00522CE6 /* MondeeBoxView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FB8E58E2A6F623A00522CE6 /* MondeeBoxView.swift */; };
 		A21D8FBC2A60FB6600A19EF5 /* SuccessView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A21D8FBB2A60FB6600A19EF5 /* SuccessView.swift */; };
 		A21D8FC02A616D7700A19EF5 /* RetryFailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A21D8FBF2A616D7700A19EF5 /* RetryFailView.swift */; };
+		A2A44CC12A6F7DFB00ED8234 /* LevelPopupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2A44CC02A6F7DFB00ED8234 /* LevelPopupView.swift */; };
+		A2A44CC32A71665800ED8234 /* AfterSuccessPopupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2A44CC22A71665800ED8234 /* AfterSuccessPopupView.swift */; };
 		BEBF14852A68EA8B006F52CE /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEBF14842A68EA8B006F52CE /* OnboardingView.swift */; };
 		F00DEB8C2A7013C300FF0FCF /* CleanViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F00DEB8B2A7013C300FF0FCF /* CleanViewModel.swift */; };
 		F00DEB8E2A7020B400FF0FCF /* LatestCollectedMondeeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F00DEB8D2A7020B400FF0FCF /* LatestCollectedMondeeView.swift */; };
@@ -160,6 +162,8 @@
 		7FB8E58E2A6F623A00522CE6 /* MondeeBoxView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MondeeBoxView.swift; sourceTree = "<group>"; };
 		A21D8FBB2A60FB6600A19EF5 /* SuccessView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuccessView.swift; sourceTree = "<group>"; };
 		A21D8FBF2A616D7700A19EF5 /* RetryFailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RetryFailView.swift; sourceTree = "<group>"; };
+		A2A44CC02A6F7DFB00ED8234 /* LevelPopupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LevelPopupView.swift; sourceTree = "<group>"; };
+		A2A44CC22A71665800ED8234 /* AfterSuccessPopupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AfterSuccessPopupView.swift; sourceTree = "<group>"; };
 		BEBF14842A68EA8B006F52CE /* OnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
 		F00DEB8B2A7013C300FF0FCF /* CleanViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CleanViewModel.swift; sourceTree = "<group>"; };
 		F00DEB8D2A7020B400FF0FCF /* LatestCollectedMondeeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LatestCollectedMondeeView.swift; sourceTree = "<group>"; };
@@ -354,6 +358,8 @@
 				29623FB42A6941DC00B4B380 /* TodayView.swift */,
 				7FB8E58C2A6F621700522CE6 /* MondeeLevelView.swift */,
 				7FB8E58E2A6F623A00522CE6 /* MondeeBoxView.swift */,
+				A2A44CC02A6F7DFB00ED8234 /* LevelPopupView.swift */,
+				A2A44CC22A71665800ED8234 /* AfterSuccessPopupView.swift */,
 			);
 			path = TodayView;
 			sourceTree = "<group>";
@@ -367,7 +373,6 @@
 				29A8A39F2A6D80ED007C24A5 /* RecordCalendarView.swift */,
 				29AAE3862A6F3DA5008913C2 /* MonthStatistics.swift */,
 				29AAE3882A6F9895008913C2 /* TotalStatistics.swift */,
-				29A8A3A32A6D8C17007C24A5 /* DateViewModel.swift */,
 				29A8A3A52A6D8CE2007C24A5 /* DateExtensions.swift */,
 				29A8A3A32A6D8C17007C24A5 /* DateViewModel.swift */,
 			);
@@ -552,6 +557,7 @@
 				F0527A3A2A6E41F8001923F7 /* ColorSystem.swift in Sources */,
 				292CE6C42A5ECD8000BEE4AF /* SampleViewModel.swift in Sources */,
 				29A0E5952A68BB82009FFBD1 /* ReceiveDataSampleView.swift in Sources */,
+				A2A44CC12A6F7DFB00ED8234 /* LevelPopupView.swift in Sources */,
 				29AAE3892A6F9895008913C2 /* TotalStatistics.swift in Sources */,
 				2919A7712A5D0099000B6CF6 /* ContentView.swift in Sources */,
 				2900B1212A6986FC00B7AEFD /* Triangle.swift in Sources */,
@@ -572,6 +578,7 @@
 				2900B11B2A6986EE00B7AEFD /* RoundedCross.swift in Sources */,
 				7FB8E58D2A6F621700522CE6 /* MondeeLevelView.swift in Sources */,
 				29D1D3542A66DF0E00A1A3BE /* GameResultModel.swift in Sources */,
+				A2A44CC32A71665800ED8234 /* AfterSuccessPopupView.swift in Sources */,
 				F00DEB8E2A7020B400FF0FCF /* LatestCollectedMondeeView.swift in Sources */,
 				BEBF14852A68EA8B006F52CE /* OnboardingView.swift in Sources */,
 				2900B1152A6986E100B7AEFD /* ConfettiCannon.swift in Sources */,

@@ -10,33 +10,46 @@ import SwiftUI
 struct TodayView: View {
     @StateObject private var viewModel = TodayViewModel()
     
+    @State private var isLevelInfoPopup = false
+    
     var body: some View {
-        VStack {
-            Spacer().frame(height: 1)
-            ScrollView(showsIndicators: false) {
-                VStack(spacing: 16) {
-                    InfoIconSection()
-                    TitleSection()
-                    MondeeLevelView(viewModel: viewModel)
-                    MondeeBoxView(viewModel: viewModel)
-                    ShareButtonSection()
-                    Spacer()
-                }
-            }.padding(.all, 24.0)
+        ZStack {
+            VStack {
+                Spacer().frame(height: 1)
+                ScrollView(showsIndicators: false) {
+                    VStack(spacing: 16) {
+                        InfoIconSection(isLevelInfoPopup: $isLevelInfoPopup)
+                        TitleSection()
+                        MondeeLevelView(viewModel: viewModel, isLevelInfoPopup: $isLevelInfoPopup)
+                        MondeeBoxView(viewModel: viewModel)
+                        ShareButtonSection()
+                        Spacer()
+                    }
+                }.padding(.all, 24.0)
+            }.blur(radius: isLevelInfoPopup ? 2 : 0)
+            
+            if isLevelInfoPopup {
+                LevelPopupView(isLevelInfoPopup: $isLevelInfoPopup)
+                    .transition(.opacity)
+            }
         }
     }
 }
 
 struct InfoIconSection: View {
+    @Binding var isLevelInfoPopup: Bool
+    
     var body: some View {
         HStack {
             Spacer()
-            Image(systemName: "info.circle.fill")
-                .font(.title2)
-                .foregroundColor(.mondeeDarkGrey)
-                .onTapGesture {
-                    print("Tap Info Button")
-                }
+            Button {
+                isLevelInfoPopup = true
+            } label: {
+                Image(systemName: "info.circle.fill")
+                    .font(.title2)
+                    .foregroundColor(.mondeeDarkGrey)
+            }
+            .buttonStyle(MondeeButtonClickStyle())
         }
     }
 }
