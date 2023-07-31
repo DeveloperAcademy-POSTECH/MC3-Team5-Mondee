@@ -40,7 +40,7 @@ struct GameRuleView: View {
                     } label: {
                         Image(systemName: "xmark")
                             .font(.title2)
-                            .foregroundColor(.white)
+                            .foregroundColor(.black)
                             .offset(x: -8)
                     }
                 }
