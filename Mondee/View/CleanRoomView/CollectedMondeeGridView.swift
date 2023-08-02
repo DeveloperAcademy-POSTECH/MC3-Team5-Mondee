@@ -29,7 +29,8 @@ struct CollectedMondeeGridView: View {
                             Circle()
                                 .frame(width: 86)
                                 .foregroundColor(Color(.systemGray6))
-                            if collectedMondee.isCollected == true {
+                            // MARK: collectedMondee.isCollected == true 지만 발표 gif를 위한 테스트 코드
+                            if collectedMondee.isCollected == false {
                                 Image(collectedMondee.collectedMondeeImg)
                                     .resizable()
                                     .aspectRatio(contentMode: .fit)
@@ -47,7 +48,8 @@ struct CollectedMondeeGridView: View {
                     }
                 }
                 .buttonStyle(MondeeButtonClickStyle())
-                .disabled(!collectedMondee.isCollected)
+//                MARK: 발표 시 캐릭터 클릭 가능 코드
+//                .disabled(!collectedMondee.isCollected)
             }
         }
         .padding(.vertical, 8)
