@@ -70,6 +70,21 @@ class UserData: ObservableObject {
             }
         }
     }
+    
+    func generateRandomDateInJuly() -> Date {
+         let calendar = Calendar.current
+         let month = 7 // July
+         let year = calendar.component(.year, from: Date())
+         let dayRange = calendar.range(of: .day, in: .month, for: Date())!
+         let randomDay = Int.random(in: dayRange.lowerBound..<dayRange.upperBound)
+         
+         var components = DateComponents()
+         components.year = year
+         components.month = month
+         components.day = randomDay
+         
+         return calendar.date(from: components) ?? Date()
+     }
 }
 
 

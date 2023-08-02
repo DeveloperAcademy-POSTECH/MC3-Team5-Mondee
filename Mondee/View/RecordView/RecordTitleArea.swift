@@ -19,7 +19,7 @@ struct RecordTitleArea: View {
         
         
         VStack(alignment: .leading, spacing: 5) {
-            Text("연속 성공 \(recentConsecutiveSuccessCount)일차🎉")
+            Text("연속 성공 0일차🎉")
                 .font(.title)
                 .fontWeight(.bold)
                 .foregroundColor(.primary)

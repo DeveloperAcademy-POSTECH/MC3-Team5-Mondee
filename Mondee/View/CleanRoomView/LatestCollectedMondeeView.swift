@@ -17,7 +17,7 @@ struct LatestCollectedMondeeView: View {
                     Circle()
                         .frame(width: 168)
                         .foregroundColor(Color(.systemGray6))
-                    Image(mostRecentRow.collectedMondeeImg)
+                    Image("ImgCollectedMondee012-IOS")
                         .resizable()
                         .scaledToFit()
                         .frame(width: 110)

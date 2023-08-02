@@ -25,6 +25,33 @@ struct RecordView: View {
             ScrollView{
                 VStack(spacing: 15){
                     RecordTitleArea(scrollViewOffset: $scrollViewOffset, userData: userData)
+                        .overlay{
+                            Button {
+                                let newGameSuccess = true
+                                let newGameFail = false
+                                let newGamePlayTime = 600
+                                let newGamePlayDate = userData.generateRandomDateInJuly()
+                                let newRemainingHeartCount = 2
+                                let newGameRetry = false
+                                let newGameStart = true
+                                let newGamePause = false
+                                
+                                userData.save(
+                                    newGameSuccess,
+                                    newGameFail,
+                                    newGamePlayTime,
+                                    newGamePlayDate,
+                                    newRemainingHeartCount,
+                                    newGameRetry,
+                                    newGameStart,
+                                    newGamePause
+                                )
+                            } label: {
+                                Rectangle()
+                                    .fill(Color.clear)
+                            }
+                            
+                        }
                     VStack(spacing: 15){
                         RecordCalendarArea(currentDate: $currentDate, currentMonth: $currentMonth)
                         MonthStatistics(userData: userData, currentMonth: $currentMonth)

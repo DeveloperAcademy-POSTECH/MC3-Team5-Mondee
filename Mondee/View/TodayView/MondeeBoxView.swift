@@ -9,6 +9,7 @@ import SwiftUI
 
 struct MondeeBoxView: View {
     @ObservedObject var viewModel: TodayViewModel
+    @ObservedObject var userData = UserData()
     
     @State private var isMondeeTalking = false
     
@@ -57,6 +58,7 @@ struct MondeeBoxView: View {
                                     }
                                 }
                             }
+                            print(userData.userdata.description)
                         }
                         .background(){
                             if viewModel.isCheckActive {

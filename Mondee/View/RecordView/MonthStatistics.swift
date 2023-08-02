@@ -24,6 +24,7 @@ struct MonthStatistics: View {
             .foregroundColor(Color.mondeeBoxBackground)
             .overlay(alignment: .leading){
                 VStack(alignment: .leading, spacing: 0){
+                    
                     Text("\(calendarMonthNumber(for: currentMonth))월 기록")
                         .monospacedDigit()
                         .font(.system(size: 20, weight: .bold))
