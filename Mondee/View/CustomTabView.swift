@@ -64,6 +64,7 @@ struct CustomTabView: View {
                     .transition(.opacity)
             }
         }
+        .tint(.clear)
     }
 }
 

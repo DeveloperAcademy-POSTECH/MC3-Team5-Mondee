@@ -126,7 +126,6 @@ struct ShareView: View {
             }
             .padding()
         }
-        .navigationBarBackButtonHidden()
         .toolbar {
             ToolbarItem(placement: .navigationBarLeading, content: {
                 Button {
@@ -134,7 +133,8 @@ struct ShareView: View {
                 } label: {
                     Image(systemName: "chevron.left")
                         .foregroundColor(.mondeeGrey)
-                        .padding(.leading, 5)
+                        .fontWeight(.semibold)
+                        .padding(.leading, -30)
                 }
 
             })
