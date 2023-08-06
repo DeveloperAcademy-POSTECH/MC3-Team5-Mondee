@@ -18,7 +18,7 @@
 
 <br>
 
-[<img width = "200" src="https://github-production-user-asset-6210df.s3.amazonaws.com/120548537/251533420-0eb9b31b-8203-48b7-8dcd-3725a8c9da49.png">](https://www.apple.com/kr/store)
+[<img width = "200" src="https://github-production-user-asset-6210df.s3.amazonaws.com/120548537/251533420-0eb9b31b-8203-48b7-8dcd-3725a8c9da49.png">](https://testflight.apple.com/join/ZXEDYYZ9)
   
 </div>
 
